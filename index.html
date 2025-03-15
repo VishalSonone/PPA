@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="KBCNMUlogo.jpeg" alt="Logo" class="logo" height="100px" width="100px">
+        <h2>Student Login</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <input type="text" id="seatNo" placeholder="Enter your Seat No (PPA-XXX)" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="resultContainer" class="hidden">
+            <h3>Your Result</h3>
+            <p><strong>Total Score:</strong> <span id="totalScore"></span>/40</p>
+            <canvas id="resultChart"></canvas>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
